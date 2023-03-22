@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>788EFC3F-0270-44F9-961F-019A74B6CE46</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.000480460765 14.9988919 0.000480460765 14.9988919 4.9999 0 4.9999"></polygon>
+        <polygon id="path-3" points="0.8411 0.834 4.1831 0.834 4.1831 4.1669 0.8411 4.1669"></polygon>
+        <polygon id="path-5" points="0.8411 0.834 4.1821 0.834 4.1821 4.1669 0.8411 4.1669"></polygon>
+    </defs>
+    <g id="Asperii_FOX-Sport-project_List_Send_Request" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gameplay-List---main---send---Availability-msg-3B" transform="translate(-372.000000, -265.000000)">
+            <g id="Group-2" transform="translate(101.000000, 245.000000)">
+                <g id="Group-10" transform="translate(271.000000, 19.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 10.166200)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M7.4995,4.9999 C2.9685,4.9999 0.2785,1.4829 0.1665,1.3329 C-0.1095,0.9659 -0.0345,0.4459 0.3315,0.1699 C0.6995,-0.1101 1.2215,-0.0341 1.4985,0.3319 C1.5205,0.3609 3.8175,3.3329 7.4995,3.3329 C11.1815,3.3329 13.4775,0.3609 13.5005,0.3319 C13.7785,-0.0351 14.3025,-0.1071 14.6675,0.1699 C15.0335,0.4459 15.1075,0.9659 14.8335,1.3329 C14.7215,1.4829 12.0305,4.9999 7.4995,4.9999" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                    <g id="Group-6" transform="translate(0.000000, 0.166200)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-5"></g>
+                        <path d="M2.5161,4.1669 C1.5961,4.1669 0.8411,3.4209 0.8411,2.4999 C0.8411,1.5799 1.5791,0.8339 2.4991,0.8339 L2.5161,0.8339 C3.4361,0.8339 4.1831,1.5799 4.1831,2.4999 C4.1831,3.4209 3.4361,4.1669 2.5161,4.1669" id="Fill-4" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                    </g>
+                    <g id="Group-9" transform="translate(10.000000, 0.166200)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-8"></g>
+                        <path d="M2.5151,4.1669 C1.5941,4.1669 0.8411,3.4209 0.8411,2.4999 C0.8411,1.5799 1.5781,0.8339 2.4991,0.8339 L2.5151,0.8339 C3.4371,0.8339 4.1821,1.5799 4.1821,2.4999 C4.1821,3.4209 3.4371,4.1669 2.5151,4.1669" id="Fill-7" fill="#FFFFFF" mask="url(#mask-6)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<apex:page >
+<!-- <apex:page standardcontroller="DMO_Resource_Allocation__c" extensions="AllocateGroupResourceExtension">
+    <apex:pagemessages ></apex:pagemessages>    
+     <apex:form >
+         <apex:pageblock >
+             <div align="center" draggable="false" >
+                 <apex:commandButton value="Next" action="{!nextPage}"/>
+                 <apex:commandButton value="Cancel" action="{!cancelPage}"/>
+             </div>
+             <br/>
+         <apex:pageblock Title="Select Group">
+             <apex:pageblocksection >
+                 <apex:inputfield value="{!selectGroupResource.DMO_Group1__c}"/>                 
+             </apex:pageblocksection>                     
+         </apex:pageblock>
+         
+         <apex:pageblock Title="Select Contact">              
+             <apex:pageblocksection >
+                 <apex:inputfield value="{!selectGroupResource.DMO_Group_Member1__c}"/>
+             </apex:pageblocksection>             
+         </apex:pageblock>
+         </apex:pageblock>
+     </apex:form> -->
+</apex:page>

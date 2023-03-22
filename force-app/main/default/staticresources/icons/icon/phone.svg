@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>B26B0E6D-A5E2-477E-8D96-73B34DE522B1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-17.9%" y="-21.2%" width="135.7%" height="142.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.364705882   0 0 0 0 0.733333333  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M8,13 C8.2708344,13 8.5052072,12.9010424 8.7031248,12.7031248 C8.9010424,12.5052072 9,12.2708344 9,12 C9,11.7291656 8.9010424,11.4947928 8.7031248,11.2968752 C8.5052072,11.0989576 8.2708344,11 8,11 C7.7291656,11 7.4947928,11.0989576 7.2968752,11.2968752 C7.0989576,11.4947928 7,11.7291656 7,12 C7,12.2708344 7.0989576,12.5052072 7.2968752,12.7031248 C7.4947928,12.9010424 7.7291656,13 8,13 Z M10.2222222,1 L5.77777778,1 C5.28703431,1 4.8680576,1.170898 4.52083335,1.512694 C4.17360939,1.854497 4,2.266923 4,2.75 L4,13.25 C4,13.7330756 4.17360939,14.1455058 4.52083335,14.4873047 C4.8680576,14.8291033 5.28703431,15 5.77777778,15 L10.2222222,15 C10.7129657,15 11.1319396,14.8291033 11.479168,14.4873047 C11.8263893,14.1455058 12,13.7330756 12,13.25 L12,2.75 C12,2.266923 11.8263893,1.854497 11.479168,1.512694 C11.1319396,1.170898 10.7129657,1 10.2222222,1 Z M11,13 C11,13.2708344 10.9151792,13.5052072 10.7455355,13.7031248 C10.5758919,13.9010424 10.3750009,14 10.1428571,14 L5.85714286,14 C5.62499909,14 5.42410811,13.9010424 5.25446446,13.7031248 C5.0848208,13.5052072 5,13.2708344 5,13 L5,10 L11,10 L11,13 Z M11,9 L5,9 L5,4 L11,4 L11,9 Z M11,3 L5,3 L5,2.66666667 C5,2.486112 5.0848208,2.32986133 5.25446446,2.19791467 C5.42410811,2.06597333 5.62499909,2 5.85714286,2 L10.1428571,2 C10.3750009,2 10.5758919,2.06597333 10.7455355,2.19791467 C10.9151792,2.32986133 11,2.486112 11,2.66666667 L11,3 Z" id="path-2"></path>
+    </defs>
+    <g id="phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-178.000000, -484.000000)">
+            <g id="GAME-PLAN-BG" fill="#FAFAF9">
+                <g id="GANTT-BG">
+                    <polygon id="bg" points="5.32907052e-14 78 1920 78 1920 838 0 838"></polygon>
+                </g>
+            </g>
+            <g id="Gantt" transform="translate(0.000000, 226.000000)">
+                <g id="Table" transform="translate(155.000000, 0.000000)">
+                    <g id="Components-/-Schedule-/-Table-/-12-hour" stroke="#F4F0ED" stroke-dasharray="4,6" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Schedule-/-Table-/-Column" transform="translate(0.000000, 60.000000)">
+                            <line x1="27.0506329" y1="0.485915493" x2="27.0506329" y2="551.514085" id="Line"></line>
+                        </g>
+                    </g>
+                    <g id="Schedule-/-Table-/-ROWS" transform="translate(1.000000, 126.000000)"></g>
+                </g>
+            </g>
+            <g id="Hover-Modal-Copy" transform="translate(161.000000, 434.000000)">
+                <g id="Shapes-/-Fill-/-Soft" filter="url(#filter-1)" transform="translate(1.000000, 0.000000)" fill="#FFFFFF">
+                    <rect id="Shape" x="0" y="0" width="196" height="165" rx="8"></rect>
+                </g>
+                <g id="Group-5" transform="translate(17.000000, 49.000000)">
+                    <g id="Icons-/-16-/-Flag" transform="translate(0.000000, 1.000000)">
+                        <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Fill-1" fill="#000000" xlink:href="#path-2"></use>
+                        <rect id="🎨-Color" fill="#706E6B" mask="url(#mask-3)" transform="translate(8.000000, 8.000000) rotate(0) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

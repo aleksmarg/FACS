@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACS_DL_List__c</fullName>
+    <externalId>false</externalId>
+    <label>Distribution List</label>
+    <referenceTo>FACS_DL_Lists__c</referenceTo>
+    <relationshipLabel>FACS_DL_List_Emails</relationshipLabel>
+    <relationshipName>FACS_DL_List_Emails</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

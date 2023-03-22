@@ -1,0 +1,8 @@
+{!FACS_MAIN__c.Name}  has been processed with status {!FACS_MAIN__c.FACS_STATUS__c}  .
+Send Grid message :  {!FACS_MAIN__c.FACS_SendGrid_confirmation__c}..
+
+You can review {!FACS_MAIN__c.Name} or take nessesary action by click on link below
+
+
+
+{!FACS_MAIN__c.Link}..

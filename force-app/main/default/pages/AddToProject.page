@@ -1,0 +1,18 @@
+<apex:page >
+  
+  <!--<apex:form >
+  
+      <apex:pageblock title="Add Project">
+          <apex:pageblockButtons >
+              <apex:commandButton value="Save" action="{!saveProject}"/>
+              <apex:commandButton value="Cancel" action="{!cancelProject}"/>
+          </apex:pageblockButtons>
+          <apex:pageblocksection >
+              <apex:inputfield value="{!resource.Project_Lookup__c}"/>
+          </apex:pageblocksection>
+          
+          <apex:inputhidden value="{!CASID}"/>
+      </apex:pageblock>
+  </apex:form>-->
+  
+</apex:page>

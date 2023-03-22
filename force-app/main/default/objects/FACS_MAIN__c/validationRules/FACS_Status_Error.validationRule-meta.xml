@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACS_Status_Error</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(PRIORVALUE(FACS_STATUS__c), &quot;Error&quot;))</errorConditionFormula>
+    <errorMessage>Error record status cannot be changed.For any changes plese clone record.</errorMessage>
+</ValidationRule>

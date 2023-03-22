@@ -1,0 +1,66 @@
+<!--***************************************************************************************************
+* Name: ATS_UpdatePreemptionTimingsComponent
+* Object: Program, Preemption & Program Schedules
+* Purpose: to update preemption from and to date fields
+* Author: Premkumar Mohandass(premkumar.mohandass@pwc.com)
+* Create Date: 2018-05-10
+* Modify History:
+* 2018-05-10	Premkumar			Created
+****************************************************************************************************-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" 
+                access="global" controller="ATS_PreemptionsUpdateDatesController">
+    
+    <!--attributes-->
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="preemptionObj" type="ATS_Preemption__c" default="{'sobjectType' : 'ATS_Preemption__c'}"/>
+    <aura:attribute name="fromTimeValues" type="List"/>
+    <aura:attribute name="toTimeValues" type="List"/>
+    
+    <!--handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- spinner -->
+    <div aura:id="spinnerId" id="spinnerId" class="slds-hide">
+        <lightning:spinner variant="brand" size="large"/>
+    </div>
+    
+    
+    <!--section which displays date fields of preemption record-->
+    <aura:if isTrue="{!v.preemptionObj.ATS_Program__c != null}">
+        <lightning:card>
+            <aura:set attribute="title">
+                <span class="slds-align_absolute-center slds-border_bottom slds-p-bottom_small">
+                    {!$Label.c.ATS_UpdateProgramTimingsLabel}
+                </span>
+            </aura:set>
+            
+            <lightning:layout horizontalAlign="center" multipleRows="true">
+                <lightning:layoutItem flexibility="auto" padding="around-small" size="7">
+                    <lightning:select value="{!v.preemptionObj.ATS_From__c}" label="{!$Label.c.ATS_FromTimeLabel}">
+                        <aura:iteration items="{!v.fromTimeValues}" var="value">
+                            <option value="{!value}" text="{!value}"/>
+                        </aura:iteration>
+                    </lightning:select>
+                </lightning:layoutItem>
+                
+                <lightning:layoutItem flexibility="auto" padding="around-small" size="7">
+                    <lightning:select value="{!v.preemptionObj.ATS_To__c}" label="{!$Label.c.ATS_ToTimeLabel}">
+                        <aura:iteration items="{!v.toTimeValues}" var="value">
+                            <option value="{!value}" text="{!value}"/>
+                        </aura:iteration>
+                    </lightning:select>    
+                </lightning:layoutItem>
+            </lightning:layout>   
+            
+            <aura:set attribute="footer">
+                <lightning:layout horizontalAlign="end">
+                    <lightning:layoutItem flexibility="auto" padding="around-small">
+                        <lightning:button name="Cancel" label="{!$Label.c.ATS_CancelButtonLabel}" onclick="{!c.cancel}"/>
+                        <lightning:button name="Save" label="{!$Label.c.ATS_SaveButtonLabel}" class="slds-p-right_small"
+                                          variant="brand" onclick="{!c.submit}"/>
+                    </lightning:layoutItem>    
+                </lightning:layout>
+            </aura:set>
+        </lightning:card>
+    </aura:if>
+</aura:component>

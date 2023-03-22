@@ -1,0 +1,45 @@
+<!--***************************************************************************************************
+* Name: ATS_CreateProgramScheduleComponent
+* Object: Program Schedule
+* Purpose: to create program schedule for each affliated stations
+* Author: Premkumar Mohandass(premkumar.mohandass@pwc.com)
+* Create Date: 2018-05-04
+* Modify History:
+* 2018-05-04	Premkumar			Created
+****************************************************************************************************-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" 
+                access="global" controller="ATS_ProgramSchedulesCreateController">
+    
+    <!--attributes-->
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="schedule" type="ATS_Program_Schedule__c" 
+                    default="{ 'sobjectType': 'ATS_Program_Schedule__c' }"/>
+    
+    <!-- spinner -->
+    <div aura:id="spinnerId" id="spinnerId" class="slds-hide">
+        <lightning:spinner variant="brand" size="large"/>
+    </div>
+    
+    <!--lightning card-->
+    <lightning:card >
+        <aura:set attribute="title">
+            <div class="slds-border_bottom slds-p-bottom_small slds-align_absolute-center">
+        		<h1>{!$Label.c.ATS_CreateProgramSchedules}</h1>
+            </div>    
+        </aura:set>
+        
+        <aura:set attribute="footer">
+            <div class="slds-float_right">
+                <lightning:button class="slds-p-right_small" label="{!$Label.c.ATS_CancelButtonLabel}"
+                                  onclick="{!c.cancel}"/>
+                <lightning:button variant="brand" label="{!$Label.c.ATS_CreateButtonLabel}"
+                                  onclick="{!c.saveProgramSchedule}"/>
+            </div>   
+        </aura:set>
+        
+        <div>
+        	<p>{!$Label.c.ATS_CreateScheduleConfirmation}</p>
+        </div>
+    </lightning:card>    
+	
+</aura:component>

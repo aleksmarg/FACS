@@ -1,0 +1,49 @@
+<!--***************************************************************************************************
+* Name: ATS_OperatedAndOwnedListComponent
+* Object: Account
+* Purpose: to display a list of operated and owned by for every owner group
+* Author: Premkumar Mohandass(premkumar.mohandass@pwc.com)
+* Create Date: 2018-06-13
+* Modify History:
+* 2018-06-13	Premkumar			Created
+****************************************************************************************************-->
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller="ATS_OperatedAndOwnedListController">
+    
+    <!--attributes-->
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="rowData" type="List"/>
+    <aura:attribute name="columnHeaders" type="List"/>
+    
+    <!--handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- spinner -->
+    <div aura:id="spinnerId" id="spinnerId" class="slds-hide">
+        <lightning:spinner variant="brand" size="large"/>
+    </div>
+    
+    <!--card-->
+    <lightning:card>
+        <!--action-->
+        <aura:set attribute="actions">
+            <aura:if isTrue="{!v.rowData.length > 0}">
+                <lightning:button label="{!$Label.c.ATS_ExportButtonLabel}" variant="brand" onclick="{!c.exportData}"/>  
+            </aura:if>    
+        </aura:set> 
+        
+        <aura:if isTrue="{!v.rowData.length > 0}">
+            <div >
+                <lightning:datatable keyField="id"
+                                     data="{! v.rowData }"
+                                     columns="{! v.columnHeaders }"
+                                     hideCheckboxColumn="true"
+                                     resizeColumnDisabled="true"
+                                     class="table"/>
+            </div>
+            <aura:set attribute="else">
+                <div class="slds-text-title_caps">{!$Label.c.ATS_NoRecordsToDisplayLabel}</div>
+            </aura:set>
+        </aura:if>
+    </lightning:card> 
+</aura:component>

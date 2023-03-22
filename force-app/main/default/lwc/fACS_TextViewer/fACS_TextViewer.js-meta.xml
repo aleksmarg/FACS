@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <masterLabel>Plain text edit/view</masterLabel>
+    <description>This component allows display of plain text.</description>
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="value" type="String" description="input/output of control" />
+            <property name="recordId" type="String" description="input/output of control" />
+            <property name="RecordOutId" type="String" description="input/output of control" />
+            <property name="enableEdit" type="Boolean" role="inputOnly"></property>
+        </targetConfig>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="recordId" type="String" description="input/output of control" ></property>
+            <property name="enableEdit" type="Boolean"></property>
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

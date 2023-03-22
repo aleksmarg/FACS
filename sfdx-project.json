@@ -1,0 +1,9 @@
+{
+  "packageDirectories": [
+      { "path": "force-app", "default": true}
+  ],
+  "name": "FACS",
+  "namespace": "",
+  "sfdcLoginUrl": "https://foxapps--facsdev01.sandbox.lightning.force.com/",
+  "sourceApiVersion": "55.0"
+}

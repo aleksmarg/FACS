@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>FACS log email application</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>FACS</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>FACS_Main</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>FACS_MAIN__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>FACS_Main</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>FACS_MAIN__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>FACS_MAIN__c</tabs>
+    <tabs>FACS_DistrList__c</tabs>
+    <tabs>FACS_DL_Lists__c</tabs>
+    <tabs>FACS_DL_List_Email__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>FACS_UtilityBar</utilityBar>
+</CustomApplication>

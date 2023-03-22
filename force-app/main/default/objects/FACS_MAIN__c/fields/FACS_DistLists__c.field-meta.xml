@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACS_DistLists__c</fullName>
+    <description>TMZ FBS distr list names</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select DS list name(s) for TMZ and /or FBC Announcement</inlineHelpText>
+    <label>DistLists</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>nd_chief_engeneer_all</fullName>
+                <default>false</default>
+                <label>nd_chief_engeneer_all</label>
+            </value>
+            <value>
+                <fullName>nd_master_control_all</fullName>
+                <default>false</default>
+                <label>nd_master_control_all</label>
+            </value>
+            <value>
+                <fullName>NE owners all</fullName>
+                <default>false</default>
+                <label>NE owners all</label>
+            </value>
+            <value>
+                <fullName>Affiliated log as of 082522</fullName>
+                <default>false</default>
+                <label>Affiliated log as of 082522</label>
+            </value>
+            <value>
+                <fullName>TMZ hip hop</fullName>
+                <default>false</default>
+                <label>TMZ hip hop</label>
+            </value>
+            <value>
+                <fullName>TMZ GM list</fullName>
+                <default>false</default>
+                <label>TMZ GM list</label>
+            </value>
+            <value>
+                <fullName>TMZ CSD Affiliate List</fullName>
+                <default>false</default>
+                <label>TMZ CSD Affiliate List</label>
+            </value>
+            <value>
+                <fullName>TMZ Email list1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TMZ Email list1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

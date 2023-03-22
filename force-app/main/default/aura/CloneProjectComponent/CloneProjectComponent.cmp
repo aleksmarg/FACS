@@ -1,0 +1,10 @@
+<aura:component controller="ProjectController" implements="force:lightningQuickAction,force:hasRecordId" access="global">    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="project" type="PMO_Project__c"/>
+    <aura:attribute name="projectName" type="String" />
+    <aura:attribute name="isDisabled" type="Boolean" default="true" />
+    
+    <ui:inputText label="Project Name1" value="{!v.projectName}" required="true"/>
+    <lightning:button label="Create Clone" onclick="{!c.clone}" disabled="{!v.isDisabled}"/>
+</aura:component>

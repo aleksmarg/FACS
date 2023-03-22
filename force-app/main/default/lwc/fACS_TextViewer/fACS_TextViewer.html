@@ -1,0 +1,12 @@
+<template>   
+        <template if:true={enableEdit}>
+        <textarea class="plainText-input bg-gray" wrap="off"  autocapitalize="off" spellcheck="false"> {textValue}</textarea> 
+        <!--<br></br>-->
+      <!-- <lightning-badge label="Save">{badgeSave}</lightning-badge> -->
+        <input type="button" style="background:#0f0f10;color:white;margin-left: 80px; " value="Save Schedule" onclick={handleclick}/>
+    </template>
+    <template if:false={enableEdit}>
+        <textarea class="plainText-input" readonly wrap="off"  autocapitalize="off" spellcheck="false"> {textValue}</textarea>
+    </template>
+     
+</template>

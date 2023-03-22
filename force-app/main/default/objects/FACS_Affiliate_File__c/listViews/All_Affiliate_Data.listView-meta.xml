@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Affiliate_Data</fullName>
+    <columns>NAME</columns>
+    <columns>FACS_Subject__c</columns>
+    <columns>FACS_Schedule__c</columns>
+    <columns>FACS_Recipient__c</columns>
+    <columns>FACS_File_Name__c</columns>
+    <columns>FACS_Output_File_Name__c</columns>
+    <columns>FACS_Program__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>FACS_ContentDocumentId__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Affiliate Data</label>
+</ListView>

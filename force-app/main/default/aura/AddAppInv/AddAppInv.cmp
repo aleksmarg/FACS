@@ -1,0 +1,53 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="addAppInvController">
+     <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="selection" type="List" />
+    <aura:attribute name="rowKeys" type="List" />
+    <aura:attribute name="selectedRowsrel" type="List" />
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute type="Boolean" name="showRemove" default="true"/>
+    <aura:attribute name="columnsrel" type="List"/>
+    <aura:attribute name="rowKeysrel" type="List" />
+    <aura:attribute name="selectedRows" type="List" />
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="datarel" type="Object"/>
+    <aura:attribute name="selectedLookUpRecord" type="sObject" default="{}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div 	class="slds-theme_default ">
+    	<lightning:layout class="slds-page-header slds-page-header--object-home slds-scrollable">
+            <lightning:layoutItem padding="horizontal-arge">
+                    <div class="page-section page-header">
+                        <H1 >App Inventory</H1>
+                    </div>
+           </lightning:layoutItem>
+     
+     	</lightning:layout>
+        <div style="margin: 15px 15px 15px 15px">
+        	<c:customLookup objectAPIName="AI_App_Inventory__c" IconName="standard:hierarchy" selectedRecord="{!v.selectedLookUpRecord}" label="App Inventory Name" aura:id="cComp"/>      
+        </div>
+        <div align="center">
+        	<lightning:button variant="brand"
+                          label="Add"
+                          title="Add"
+                          onclick="{! c.addAppInv }" 
+                              disabled="{!v.selectedLookUpRecord.Id==null}"/>
+            <!--<lightning:button variant="brand"
+                          			label="Remove"
+                          			title="Remove"
+                          			onclick="{! c.RemoveRowSelection }" 
+                      				disabled="{!v.showRemove}"/>-->
+        </div><br/>
+        <!--<div  class=" slds-scrollable" style="text-align: center;  height: 200px;">
+     	<lightning:datatable
+                         class="table-test"
+                         columns="{! v.columns }"
+                         data="{! v.data }"
+                         keyField="id"
+                         selectedRows="{! v.selectedRows }"
+                         showRowNumberColumn="true"
+                         onrowselection="{!c.handleGroupChangerel}"
+                                 
+     />
+     </div>-->
+    </div>
+  	
+</aura:component>

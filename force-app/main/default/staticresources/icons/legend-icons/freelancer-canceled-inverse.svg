@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>AEEFC665-652B-46FB-823F-D187E8B81982</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="freelancer-canceled-svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11.510061,8.7 L4.25243902,8.7 C4.12621951,8.7 4,8.56875 4,8.35 C4,8.13125 4.09466463,8 4.25243902,8 L11.510061,8 C11.6362805,8 11.7625,8.13125 11.7625,8.35 C11.7625,8.56875 11.6362805,8.7 11.510061,8.7 Z" stroke="#FFFFFF" stroke-width="0.8" fill="#FFFFFF" fill-rule="nonzero" transform="translate(7.881250, 8.350000) rotate(-49.000000) translate(-7.881250, -8.350000) "></path>
+    </g>
+</svg>

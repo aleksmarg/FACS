@@ -1,0 +1,18 @@
+<apex:page >
+<!-- <apex:page standardController="DMO_Group_Members__c" extensions="DMOModifyMembersExtension">
+
+    <apex:form >
+        <apex:pageMessages >
+        </apex:pageMessages>
+        <apex:pageblock title="Modify Group">
+        
+            
+        
+        </apex:pageblock>
+         <apex:pageblock title="Group Members">    
+            
+        </apex:pageblock>
+        
+    </apex:form>  
+-->
+</apex:page>

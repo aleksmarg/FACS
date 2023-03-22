@@ -1,0 +1,138 @@
+<apex:component access="global" controller="DEP_BayScheduleRequestController">
+	<apex:attribute access="global" assignTo="{!idRecord}" name="requestRecordId" type="String" description="Request Record Id" />    
+
+    <body style="line-height: 1.429; font-family: sans-serif">
+            <table cellpadding="0" cellspacing="0" width="100%"
+                style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: rgb(0, 38, 62); border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+                bgcolor="rgb(0, 38, 62)">
+                <tbody>
+                    <tr>
+                        <td style="padding: 0px; border-collapse: collapse; padding: 30px 10px; text-align:center;">
+                            <table id="header-pattern" cellspacing="0" cellpadding="0" border="0"
+                                style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;background-color: white;padding: 0px; border-collapse: collapse; padding: 40px 30px;border-radius: 10px; margin: 0 auto;width:600px;word-wrap: break-word;">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 20px;">
+                                            <div style="text-align: center">
+                                                <!-- image goes here -->
+                                                <div>
+                                                    <img src ="data:image/png;base64,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" />
+                                                </div>
+                                                <div>
+                                                    <span style="color: rgb(0, 38, 62);">
+                                                        <h1>Bay Schedule Request Submitted</h1>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strCreatedBy} has submitted a bay schedule request for your review.</span>
+                                                </div>            
+                                                <table style="margin: 10px auto">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-top: 10px;">
+        
+                                                                <table style="margin: 0 auto;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td
+                                                                                style=" padding: 10px; background-color: rgb(0, 38, 62); color:white; height: 30px; font-size: 15px;border-radius: 10px;">
+                                                                                <a style="font-size: 1.2em; font-weight: bold; color:white;text-decoration: none;"
+                                                                                    href="{!$Setup.FOXPMO_Domain__c.Value__c}/lightning/r/DEP_Bay_Schedule_Request__c/{!idRecord}/view">
+                                                                                    VIEW REQUEST
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+        
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>                                                            
+                                            </div>
+                                            <hr style="background-color: lightgray;" />
+                                            <div style="color: rgb(0, 38, 62);text-align: left;">
+                                                <div style="margin:10px 0;">
+                                                    <span
+                                                        style="font-weight: bold; margin-right: 10px;color: rgb(0, 38, 62);">Request #: </span>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strRequestNumber}</span>
+                                                </div>
+                                                <div style="margin:10px 0;">
+                                                    <span
+                                                        style="font-weight: bold; margin-right: 10px;color: rgb(0, 38, 62);">Project Name: </span>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strProjectName}</span>
+                                                </div>
+                                                <div style="margin:10px 0;">
+                                                    <span
+                                                        style="font-weight: bold; margin-right: 10px;color: rgb(0, 38, 62);">Requestor: </span>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strRequestor}</span>
+                                                </div>
+                                                <div style="margin:10px 0;">
+                                                    <span
+                                                        style="font-weight: bold; margin-right: 10px;color: rgb(0, 38, 62);">Other: </span>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strOtherReason}</span>
+                                                </div>                                                
+                                                <div style="margin:10px 0;">
+                                                    <span
+                                                        style="font-weight: bold; margin-right: 10px;color: rgb(0, 38, 62);">User Requesting: </span>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strProducer}</span>
+                                                </div>                                                      
+                                                <div>&nbsp;</div>                                            
+                                                <div style="margin:10px 0;">
+                                                    <span
+                                                        style="font-weight: bold; margin-right: 10px;color: rgb(0, 38, 62);">Comments: </span>
+                                                    <span style="color: rgb(0, 38, 62);">{!objRequestWrapper.strComments}</span>
+                                                </div>
+                                                <div>&nbsp;</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align:center;">
+                                        <td style="padding:16px 25px; max-width:400px;">
+                                            <table id="tableID" cellpadding="10" style="word-wrap: break-word;font-family:sans-serif;font-size:12px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin: 0 auto;">
+                                                <thead>
+                                                        <tr>
+                                                        <th style="border:solid 2px rgb(0, 38, 62); background-color: rgb(0, 38, 62); color: #ffffff;">Bay Type</th>
+                                                        <th style="border:solid 2px rgb(0, 38, 62); background-color: rgb(0, 38, 62); color: #ffffff">Editor/Artist</th>
+                                                        <th style="border:solid 2px rgb(0, 38, 62); background-color: rgb(0, 38, 62); color: #ffffff;">Time Start</th>
+                                                        <th style="border:solid 2px rgb(0, 38, 62); background-color: rgb(0, 38, 62); color: #ffffff">Time End</th>
+                                                        </tr>                                                        
+                                                </thead>
+                                                <tbody>
+                                                    <apex:repeat var="relatedItems" value="{!objRequestWrapper.listRequestItems}">             
+                                                        <tr style="{!IF(relatedItems != null,'background-color:#ffffff','background-color:##ffffff')}">
+                                                            <td style="border:solid 2px rgb(0, 38, 62);width:200px; word-wrap: break-word; word-break: break-normal;" align="center" valign="middle">{!relatedItems.strBayType}</td>
+                                                            <td style="border:solid 2px rgb(0, 38, 62);width:200px; word-wrap: break-word; word-break: break-normal;" align="center" valign="middle">{!relatedItems.strResource}</td>
+                                                            <td style="border:solid 2px rgb(0, 38, 62);width:200px; word-wrap: break-word; word-break: break-normal;" align="center" valign="middle">{!relatedItems.dtTimeStart}</td>
+                                                            <td style="border:solid 2px rgb(0, 38, 62);width:200px; word-wrap: break-word; word-break: break-normal;" align="center" valign="middle">{!relatedItems.dtTimeEnd}</td>                                                            
+                                                        </tr> 
+                                                    </apex:repeat> 
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>          
+                                    <tr>
+                                        <td style="padding: 20px;">
+                                            <hr style="background-color: lightgray;" />
+                                            <div style="text-align:center;">
+                                                <font size="4">
+                                                    <p style="margin-bottom:10px;">
+                                                        <span style="color: rgb(0, 38, 62);">Are you experiencing any technical difficulties?</span>
+                                                    </p>
+                                                    <span style="color: rgb(0, 38, 62);">Email us at: 
+                                                        <a
+                                                            href="mailto:DeportesSalesforceSupport@fox.com">DeportesSalesforceSupport@fox.com</a>
+                                                    </span>
+                                                </font>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+</apex:component>

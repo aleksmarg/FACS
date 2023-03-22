@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 0 10 0 10 9 0 9"></polygon>
+    </defs>
+    <g id="completed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Events_Status_Icons_Colors" transform="translate(-960.000000, -333.000000)">
+            <g id="Icons-/-16-/-Completed" transform="translate(964.000000, 335.000000)">
+                <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                <g id="Group">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="Oval" fill="#00C192" cx="8" cy="8" r="7"></circle>
+                    <g id="Group-3" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M9.96116886,3.40981719 C9.97749956,3.40981719 9.98825061,3.40981719 9.99668814,3.4341482 C10.0051257,3.45847921 9.99627987,3.46452978 9.98321531,3.47367 L7.25762092,5.34690026 C7.06750431,5.4775668 6.98802822,5.70903323 7.06069985,5.92041692 L8.1016461,8.9512368 C8.10681749,8.96604138 8.11008363,8.97569654 8.08803718,8.99088733 C8.06626291,9.00582065 8.05741711,8.99989882 8.04435255,8.99088733 L5.31875816,7.11752833 C5.12877765,6.98699054 4.87143298,6.98699054 4.68131637,7.11752833 L1.95572198,8.9907586 C1.94252133,8.99977008 1.93381162,9.00582065 1.91190126,8.9907586 C1.8899909,8.97569654 1.89325704,8.96604138 1.89829234,8.9512368 L2.93937468,5.92028818 C3.01204631,5.70903323 2.93243413,5.47743806 2.74231753,5.34677153 L0.016859227,3.47354127 C0.00365857514,3.46452978 -0.00505113332,3.45847921 0.00325030756,3.4341482 C0.0115517484,3.40981719 0.022438884,3.40981719 0.0387695874,3.40981719 L3.4076576,3.40981719 C3.64254755,3.40981719 3.85090011,3.26666332 3.92343565,3.05527963 L4.96451799,0.024459745 C4.96955329,0.00978389801 4.97281943,0 4.99990118,0 C5.02711902,0 5.03052125,0.00978389801 5.03555655,0.024459745 L6.0765028,3.05540836 C6.14903834,3.26666332 6.35739089,3.40981719 6.59228084,3.40981719 L9.96116886,3.40981719 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

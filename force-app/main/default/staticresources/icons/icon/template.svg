@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>3C9F7975-0D3D-4C44-BFE1-8DFFCD0ABF97</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M14.5,12 C14.7761424,12 15,12.2238576 15,12.5 C15,12.7761424 14.7761424,13 14.5,13 L6.5,13 C6.22385763,13 6,12.7761424 6,12.5 C6,12.2238576 6.22385763,12 6.5,12 L14.5,12 Z M8.5,9 C8.77614237,9 9,9.22385763 9,9.5 C9,9.77614237 8.77614237,10 8.5,10 L1.5,10 C1.22385763,10 1,9.77614237 1,9.5 C1,9.22385763 1.22385763,9 1.5,9 L8.5,9 Z M14.5,6 C14.7761424,6 15,6.22385763 15,6.5 C15,6.77614237 14.7761424,7 14.5,7 L4.5,7 C4.22385763,7 4,6.77614237 4,6.5 C4,6.22385763 4.22385763,6 4.5,6 L14.5,6 Z M9.5,3 C9.77614237,3 10,3.22385763 10,3.5 C10,3.77614237 9.77614237,4 9.5,4 L1.5,4 C1.22385763,4 1,3.77614237 1,3.5 C1,3.22385763 1.22385763,3 1.5,3 L9.5,3 Z" id="path-1"></path>
+    </defs>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Arrow-/-Left-1-Icons-/-16-/-Template" transform="translate(0.672123, 0.000000)">
+            <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#777573" xlink:href="#path-1"></use>
+            <rect id="🎨-Color" fill="#706E6B" mask="url(#mask-2)" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+        </g>
+    </g>
+</svg>

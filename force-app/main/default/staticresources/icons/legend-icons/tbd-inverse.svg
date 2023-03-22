@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>58C13AD7-C2C2-4834-9768-39285649812E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="tbd-svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.99993626,3 C6.89709023,3 6,3.78188889 6,4.74288889 C6,5.65277778 6.80466584,6.40155556 7.82592345,6.47866667 L7.82592345,12.8482222 C7.82579597,12.9318889 7.90368741,13 7.99993626,13 C8.0961851,13 8.17407655,12.9318889 8.17407655,12.8482222 L8.17407655,6.47866667 C9.19571661,6.401 10,5.65277778 10,4.74288889 C9.99987252,3.78188889 9.10278229,3 7.99993626,3 Z M7.99993626,6.18277778 C7.08920547,6.18277778 6.34815311,5.53666667 6.34815311,4.74288889 C6.34815311,3.94911111 7.08920547,3.30344444 7.99993626,3.30344444 C8.91066705,3.30344444 9.65171941,3.94911111 9.65171941,4.74277778 C9.65171941,5.53644444 8.91066705,6.18277778 7.99993626,6.18277778 Z" stroke="#FFFFFF" stroke-width="0.916666667" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

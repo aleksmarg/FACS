@@ -1,0 +1,13 @@
+.plainText-input {
+    font-size: 16px;
+    height: 400px;
+    width: 780px;
+    font-family: consolas,menlo,monaco,ubuntu mono,source-code-pro,monospace;
+    line-height: 21px;
+    overflow: scroll;
+    left:200px;
+}
+
+.bg-gray {
+    background-color: lightgrey;
+}

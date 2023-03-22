@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>7A7551B4-32FC-4AF8-A28F-11D9BC718FC2</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-17.9%" y="-21.2%" width="135.7%" height="142.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.364705882   0 0 0 0 0.733333333  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M5.07026953,7.10542736e-15 C2.27450781,7.10542736e-15 5.32907052e-15,2.27450781 5.32907052e-15,5.07024219 C5.32907052e-15,8.53983594 4.53739453,13.6334023 4.73057813,13.848543 C4.91203125,14.0506406 5.22883594,14.0502852 5.40996094,13.848543 C5.60314453,13.6334023 10.1405391,8.53983594 10.1405391,5.07024219 C10.1405391,2.27450781 7.86600391,7.10542736e-15 5.07026953,7.10542736e-15 Z M5.07026953,12.8441523 C3.54320313,11.0302227 0.9130625,7.4515 0.9130625,5.07029688 C0.9130625,2.77796094 2.77796094,0.9130625 5.07026953,0.9130625 C7.36257813,0.9130625 9.22747656,2.77796094 9.22747656,5.07026953 C9.22747656,7.45158203 6.59771875,11.0296484 5.07026953,12.8441523 Z" id="path-2"></path>
+    </defs>
+    <g id="geo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-178.000000, -550.000000)">
+            <g id="GAME-PLAN-BG" fill="#FAFAF9">
+                <g id="GANTT-BG">
+                    <polygon id="bg" points="5.32907052e-14 78 1920 78 1920 838 0 838"></polygon>
+                </g>
+            </g>
+            <g id="Gantt" transform="translate(0.000000, 226.000000)">
+                <g id="Table" transform="translate(155.000000, 0.000000)">
+                    <g id="Components-/-Schedule-/-Table-/-12-hour" stroke="#F4F0ED" stroke-dasharray="4,6" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Schedule-/-Table-/-Column" transform="translate(0.000000, 60.000000)">
+                            <line x1="27.0506329" y1="0.485915493" x2="27.0506329" y2="551.514085" id="Line"></line>
+                        </g>
+                    </g>
+                    <g id="Schedule-/-Table-/-ROWS" transform="translate(1.000000, 126.000000)" fill="#F0EFEC" opacity="0.347175">
+                        <rect id="row" x="0" y="160" width="1764" height="40"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Hover-Modal-Copy" transform="translate(161.000000, 434.000000)">
+                <g id="Shapes-/-Fill-/-Soft" filter="url(#filter-1)" transform="translate(1.000000, 0.000000)" fill="#FFFFFF">
+                    <rect id="Shape" x="0" y="0" width="196" height="165" rx="8"></rect>
+                </g>
+                <g id="Group-5-Copy" transform="translate(17.000000, 115.000000)">
+                    <g id="Group-7" transform="translate(3.015668, 2.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Shape" fill="#706E6B" fill-rule="nonzero" xlink:href="#path-2"></use>
+                        <path d="M5.07026953,2.51928906 C3.66365234,2.51928906 2.51931641,3.66365234 2.51931641,5.07026953 C2.51931641,6.47688672 3.66367969,7.62125 5.07026953,7.62125 C6.47685938,7.62125 7.62119531,6.47688672 7.62119531,5.07026953 C7.62119531,3.66365234 6.47685938,2.51928906 5.07026953,2.51928906 Z M5.07026953,6.7081875 C4.16710547,6.7081875 3.43237891,5.97343359 3.43237891,5.07026953 C3.43237891,4.16710547 4.16713281,3.43235156 5.07026953,3.43235156 C5.97340625,3.43235156 6.70816016,4.16710547 6.70816016,5.07026953 C6.70816016,5.97343359 5.97340625,6.7081875 5.07026953,6.7081875 Z" id="Shape" fill="#706E6B" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

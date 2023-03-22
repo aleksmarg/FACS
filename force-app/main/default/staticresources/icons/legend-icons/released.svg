@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>DF84AB7C-FD17-42F3-9C8E-2200DF209E52</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="released-svg" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="0.727272727">
+        <g>
+            <g>
+                <use fill="white" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <!-- <circle fill="#F8C948" cx="8" cy="8" r="7"></circle> -->
+            <g transform="translate(8.000000, 8.500000) rotate(-45.000000) translate(-8.000000, -8.500000) translate(3.000000, 5.000000)" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="0.727272727">
+                <path d="M9.66477273,3.5 L0.517045455,3.5 C0.357954545,3.5 0.198863636,3.38068182 0.198863636,3.18181818 C0.198863636,2.98295455 0.318181818,2.86363636 0.517045455,2.86363636 L9.66477273,2.86363636 C9.82386364,2.86363636 9.98295455,2.98295455 9.98295455,3.18181818 C9.98295455,3.38068182 9.82386364,3.5 9.66477273,3.5 Z"></path>
+                <path d="M6.92045455,6.08522727 C6.84090909,6.08522727 6.76136364,6.04545455 6.72159091,6.00568182 C6.60227273,5.88636364 6.60227273,5.6875 6.72159091,5.56818182 L9.22727273,3.18181818 L6.72159091,0.795454545 C6.60227273,0.676136364 6.60227273,0.477272727 6.72159091,0.357954545 C6.84090909,0.238636364 7.03977273,0.238636364 7.15909091,0.357954545 L9.90340909,2.94318182 C9.94318182,2.98295455 9.98295455,3.0625 9.98295455,3.14204545 C9.98295455,3.22159091 9.94318182,3.30113636 9.90340909,3.34090909 L7.15909091,5.92613636 C7.07954545,6.04545455 7,6.08522727 6.92045455,6.08522727 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACS_Subject</fullName>
+    <active>true</active>
+    <description>Subject cannot be &quot;Fox Broadcasting Company&quot;</description>
+    <errorConditionFormula>AND(SUBSTITUTE( UPPER(TRIM(FACS_SUBJECT__c)),&quot; &quot;,&quot;&quot;)==&apos;FOXBROADCASTINGCOMPANY&apos;)</errorConditionFormula>
+    <errorMessage>Subject cannot be Fox Broadcasting Company.Please change subject.</errorMessage>
+</ValidationRule>

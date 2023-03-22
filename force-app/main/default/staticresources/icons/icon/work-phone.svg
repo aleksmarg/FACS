@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B26B0E6D-A5E2-477E-8D96-73B34DE522B1</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter x="-17.9%" y="-23.6%" width="135.7%" height="147.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.364705882   0 0 0 0 0.733333333  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Gameplay-Gantt---Hover-a-resource-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-178.000000, -519.000000)">
+            <g id="GANTT-BG" fill="#FAFAF9">
+                <polygon id="bg" points="5.32907052e-14 78 1920 78 1920 838 0 838"></polygon>
+            </g>
+            <g id="Gantt" transform="translate(0.000000, 226.000000)">
+                <g id="Table" transform="translate(155.000000, 0.000000)">
+                    <g id="Components-/-Schedule-/-Table-/-12-hour" stroke="#F4F0ED" stroke-dasharray="4,6" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Schedule-/-Table-/-Column" transform="translate(0.000000, 60.000000)">
+                            <line x1="27.0506329" y1="0.485915493" x2="27.0506329" y2="551.514085" id="Line"></line>
+                        </g>
+                    </g>
+                    <g id="Schedule-/-Table-/-ROWS" transform="translate(1.000000, 126.000000)" fill="#F0EFEC" opacity="0.347175">
+                        <rect id="row" x="0" y="160" width="1764" height="40"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Hover-Modal-Copy" transform="translate(161.000000, 469.000000)">
+                <g filter="url(#filter-1)" id="Shapes-/-Fill-/-Soft">
+                    <g filter="url(#filter-2)" transform="translate(1.000000, 0.000000)">
+                        <rect id="Shape" fill="#FFFFFF" x="0" y="0" width="196" height="148" rx="8"></rect>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(17.000000, 49.000000)">
+                    <g id="Icons-/-16-/-Flag" transform="translate(0.000000, 1.000000)">
+                        <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                        <g id="call-(1)" transform="translate(1.000000, 1.000000)" fill="#706E6B" fill-rule="nonzero" stroke="#706E6B" stroke-width="0.5">
+                            <path d="M13.6080731,10.7803018 L10.7795273,8.89398601 C10.420576,8.65653182 9.93941815,8.73466437 9.67404583,9.07352987 L8.85011991,10.1328905 C8.74423297,10.2725084 8.55175344,10.3130075 8.39857215,10.2279158 L8.24184311,10.1415143 C7.72228755,9.85832129 7.07583141,9.50575599 5.77334018,8.20280083 C4.47084895,6.89984566 4.1175741,6.25289829 3.83438112,5.7342979 L3.7484435,5.57756886 C3.66217839,5.42441486 3.70191328,5.23111662 3.8415858,5.12438367 L4.90023687,4.30070336 C5.23896591,4.03530375 5.31720763,3.55428231 5.08002634,3.19522188 L3.19371055,0.36667607 C2.95063453,0.0010386428 2.46295422,-0.10872354 2.08664622,0.117486986 L0.903850902,0.827993808 C0.532209577,1.04648114 0.259550708,1.40032909 0.143047784,1.81538952 C-0.282874244,3.36728816 0.0375429103,6.04562734 3.98297761,9.99152597 C7.12148833,13.1297911 9.45796006,13.973786 11.0638938,13.973786 C11.4334883,13.975331 11.8016365,13.9272453 12.1584318,13.8307735 C12.5735741,13.7144071 12.9274766,13.4417209 13.1458275,13.0699704 L13.8570439,11.8878846 C14.0835819,11.5114948 13.9738743,11.0235143 13.6080731,10.7803018 Z M13.4557651,11.6489295 L12.7461862,12.8317248 C12.5894026,13.1000445 12.3348645,13.2973271 12.0358977,13.382255 C10.603231,13.7755922 8.10026026,13.4497989 4.31248248,9.6620211 C0.524704704,5.87424332 0.198938622,3.37149088 0.592275854,1.93860589 C0.677312891,1.63928426 0.874841156,1.38441876 1.14348833,1.22738952 L2.32628365,0.517810573 C2.4895624,0.419564959 2.70122712,0.467186791 2.8067047,0.625853458 L3.83137917,2.16424332 L4.69141036,3.45415365 C4.79440451,3.60990024 4.76056435,3.81864488 4.61363258,3.93389244 L3.55473589,4.75757276 C3.23249028,5.00397821 3.14046689,5.44982227 3.33886845,5.80367022 L3.42295032,5.95644215 C3.72057995,6.5023057 4.09061114,7.18137393 5.44154291,8.53208738 C6.79247468,9.88277354 7.47132459,10.252832 8.01694252,10.5504344 L8.16993277,10.6347345 C8.52375344,10.8331088 8.96962478,10.7411127 9.21603024,10.4188671 L10.0397106,9.35997042 C10.1549854,9.21312051 10.3636482,9.17930765 10.5194493,9.28219264 L13.3477495,11.1685084 C13.5065254,11.2739041 13.5541472,11.485678 13.4557651,11.6489295 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,99 @@
+<!--***************************************************************************************************
+* Name: ATS_GeneratePreemptionReportComponent
+* Object: Program, Preemption & Program Schedules
+* Purpose: to create a report of preemptions for a particular program and date
+* Author: Premkumar Mohandass(premkumar.mohandass@pwc.com)
+* Create Date: 2018-05-8
+* Modify History:
+* 2018-05-08	Premkumar			Created
+****************************************************************************************************-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" 
+                access="global" controller="ATS_PreemptionsGenerateReportController">
+    
+    <!--Static resources-->
+    <ltng:require styles="{!$Resource.ATS_QuickActionWidthOverrideCss}"/>
+    
+    <!--attributes-->
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="programDate" type="Date"/>
+    <aura:attribute name="columnHeaders" type="Object"/>
+    <aura:attribute name="rowData" type="List"/>
+    <aura:attribute name="rowPreemptedData" type="List"/>
+    <aura:attribute name="inPatternCount" type="Decimal"/>
+    <aura:attribute name="noMGCount" type="Decimal"/>
+    <aura:attribute name="dateMessage" type="String"/>
+    <aura:attribute name="exceptionFlag" type="Boolean" default="true"/>
+    
+    <!--handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.programDate}" action="{!c.refreshReport}"/>
+    
+    <!-- spinner -->
+    <div aura:id="spinnerId" id="spinnerId" class="slds-hide">
+        <lightning:spinner variant="brand" size="large"/>
+    </div>
+    
+    <aura:if isTrue="{!v.exceptionFlag == false}">
+        <lightning:card>
+            <aura:set attribute="title">
+                <lightning:input type="date" label="{!$Label.c.ATS_ReportDatePickerLabel}" 
+                                 name="date" value="{!v.programDate}"/>
+            </aura:set>
+            
+            <aura:set attribute="actions">
+                <div class="slds-p-top_large">
+                    <lightning:button variant="brand" label="{!$Label.c.ATS_ReportExportButtonLabel}" 
+                                      onclick="{!c.exportAllData}"
+                                      disabled="{!v.rowData.length == 0}"/>
+                    <lightning:button variant="brand" label="{!$Label.c.ATS_ReportExportPreemptedLabel}" 
+                                      onclick="{!c.exportPreemptedData}"
+                                      disabled="{!v.rowPreemptedData.length == 0}"/>
+                    <lightning:button label="{!$Label.c.ATS_CloseButtonLabel}" onclick="{!c.closeQuickAction}"/>
+                </div>    
+            </aura:set>
+            
+            <!--Clearance report section-->
+            <aura:set attribute="footer">
+                <aura:if isTrue="{!v.rowData.length > 0}">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-size_1-of-1">
+                            <span class="slds-box slds-theme_shade slds-p-bottom_small slds-align_absolute-center 
+                                         slds-text-title_caps">
+                                <h3><b>{!$Label.c.ATS_ReportHeaderLabel}</b></h3>
+                            </span>
+                        </div>
+                        <div class="slds-size_1-of-1">
+                            <div class="slds-grid slds-wrap slds-p-around_small">
+                                <div class="slds-size_1-of-3 slds-float-left">
+                                    <p>{!v.dateMessage}</p>
+                                </div>
+                                <div class="slds-size_1-of-3">
+                                    <div class="slds-align_absolute-center">
+                                        <b>{!$Label.c.ATS_ReportInPatternPercentLabel}</b> {!' ' +v.inPatternCount}
+                                    </div>
+                                </div>
+                                <div class="slds-size_1-of-3">
+                                    <div class="slds-align_absolute-center">
+                                        <b>{!$Label.c.ATS_ReportNOMGPercentLabel}</b> {!' ' +v.noMGCount}
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        <!--Clearance Report Table-->                    
+                        <div class="slds-size_1-of-1">
+                            <lightning:datatable data="{! v.rowData }" 
+                                                 columns="{! v.columnHeaders }" 
+                                                 keyField="market"
+                                                 hideCheckboxColumn = "true"
+                                                 minColumnWidth = "100"
+                                                 maxColumnWidth = "300"
+                                                 />
+                        </div>
+                    </div>
+                </aura:if>  
+            </aura:set>    
+        </lightning:card>
+    </aura:if>
+    
+</aura:component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="confirmed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Events_Status_Icons_Colors" transform="translate(-960.000000, -213.000000)">
+            <g id="Icons-/-16-/-Confirmed" transform="translate(964.000000, 215.000000)">
+                <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                <g id="Group">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="Oval" fill="#5BC100" cx="8" cy="8" r="7"></circle>
+                    <path d="M10.8418367,5.32115648 C11.0787167,4.98136133 11.5462042,4.89793213 11.8859994,5.13481213 C12.1880395,5.34537213 12.2875189,5.73814059 12.1395281,6.06147195 L12.0723437,6.17897485 L8.49030186,11.3172745 C8.27437152,11.6270182 7.86830804,11.7225582 7.54228927,11.5606713 L7.42431202,11.4878124 L4.29930712,9.13805829 C3.96824165,8.8891235 3.90166158,8.41894039 4.15059637,8.08787492 C4.37187174,7.7935945 4.7679606,7.7082902 5.08576641,7.86780164 L5.20077974,7.93916416 L7.70354343,9.82106566 L10.8418367,5.32115648 Z" id="Path-3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

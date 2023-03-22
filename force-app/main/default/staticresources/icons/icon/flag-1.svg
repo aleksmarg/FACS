@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>5B213A70-D788-4479-9144-D4CC8922B3D3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-7.9%" y="-6.6%" width="115.8%" height="113.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.364705882   0 0 0 0 0.733333333  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Asperii_FOX-Sport-project_L&amp;F" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gameplay-Gantt---overlapping-shifts---4-shifts-Hover" transform="translate(-1272.000000, -492.000000)">
+            <g id="GAME-PLAN-BG" fill="#FAFAF9">
+                <g id="GANTT-BG">
+                    <polygon id="bg" points="5.32907052e-14 78 1920 78 1920 838 0 838"></polygon>
+                </g>
+            </g>
+            <g id="Gantt" transform="translate(0.000000, 226.000000)" stroke="#F4F0ED" stroke-dasharray="4,6" stroke-linecap="round" stroke-linejoin="round">
+                <g id="Table" transform="translate(156.000000, 0.000000)">
+                    <g id="Components-/-Schedule-/-Table-/-12-hour" transform="translate(1012.000000, 0.000000)">
+                        <g id="Schedule-/-Table-/-Column-Schedule-/-Table-/-Column-/-Default" transform="translate(84.546835, 60.000000)">
+                            <line x1="22.4177219" y1="0.485915493" x2="22.4177219" y2="551.514085" id="Line"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Hover-Modal" transform="translate(1134.000000, 265.000000)">
+                <g id="Shapes-/-Fill-/-Soft" filter="url(#filter-1)" transform="translate(1.000000, 0.000000)" fill="#FFFFFF">
+                    <rect id="Shape" x="0" y="0" width="443" height="534" rx="8"></rect>
+                </g>
+                <g id="Violations" transform="translate(25.000000, 186.000000)">
+                    <g id="Group-7" transform="translate(0.000000, 33.000000)">
+                        <g id="Elements-/-Violation" transform="translate(105.000000, 0.000000)">
+                            <g id="Shapes-/-Fill-/-Soft" fill="#F8FAFF">
+                                <rect id="Shape" x="0" y="0" width="159" height="32" rx="8"></rect>
+                            </g>
+                            <g id="Icons-/-16-/-Flag" transform="translate(8.000000, 8.000000)">
+                                <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                                <g id="Group" transform="translate(3.000000, 2.000000)">
+                                    <polygon id="Rectangle" fill="#E0381E" points="2 0 11 0 8.3 3.52506574 11 7 2 7"></polygon>
+                                    <rect id="Rectangle" fill="#706E6B" x="0" y="0" width="1" height="12"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

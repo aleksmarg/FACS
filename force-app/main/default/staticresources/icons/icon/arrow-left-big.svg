@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>26C7F577-6D7D-43AB-818D-33FA7B805002</title>
+    <g id="Gantt-Toolbar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1250.000000, -100.000000)" id="GANTT-Toolbar">
+            <g transform="translate(34.000000, 94.000000)">
+                <g id="Toolbar">
+                    <g id="Dates-/-Pagination-/-2" transform="translate(1168.000000, 0.000000)">
+                        <g id="Molecule-/-dates-/3">
+                            <g id="Next/Previuos">
+                                <g id="Button-/-With-Icon" transform="translate(42.000000, 0.000000)">
+                                    <g id="arrow-left-big" transform="translate(6.000000, 6.000000)">
+                                        <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="20" height="20"></rect>
+                                        <path d="M15.8123133,7.32383958 L10.600208,12.7711477 C10.2999093,13.0762841 9.7994115,13.0762841 9.49911281,12.7711477 L4.20002351,7.32383958 C3.89972481,7.01870321 3.95375137,6.56099865 4.25405006,6.25586228 C4.55434875,5.95072591 5.05484657,5.95072591 5.35514526,6.25586228 L9.49911281,10.4889513 C9.7994115,10.7940877 10.2999093,10.7940877 10.600208,10.4889513 L14.7112181,6.20500622 C15.0115168,5.89986985 15.5120146,5.95072591 15.8123133,6.25586228 C16.0625622,6.56099865 16.0625622,7.01870321 15.8123133,7.32383958 Z" id="Icon" fill="#72716D" transform="translate(10.000000, 9.500000) rotate(90.000000) translate(-10.000000, -9.500000) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

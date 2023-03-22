@@ -1,0 +1,188 @@
+<apex:page >
+<!--<apex:page standardcontroller="DMO_Resource_Allocation__c"  extensions="AllocateMembersExtension,SaveAsPdfExtension"
+    action="{!initAllocateMembers}" contentType="{! renderedContentType }" renderAs="{! renderingService }"
+    applyHtmlTag="{!renderForHTML}" showHeader="{!renderForHTML}"  >  
+    
+    <head  rendered="{!renderForPDF}">
+        <style>
+            /*
+            * The below css is only for PDF rendering.  
+            * We comment it out using the IF statement 
+            * before and after when it is an HTML page
+            */            
+            .titleRow{
+                font-family: Arial, Helectiva, sans-serif;
+            }          
+            .nameRow{
+                background-color: #F8F8F8;
+                font-family: Arial, Helectiva, sans-serif;
+            }
+            .headerRow{
+                background-color: #F2F3F3; 
+                border-bottom-width:1px; 
+                border-bottom-color:#E0E3E5; 
+                border-bottom-style: solid;
+                border-right-width:1px; 
+                border-right-color:#E0E3E5; 
+                border-right-style: solid;
+                border-top-width:1px; 
+                border-top-color:#E0E3E5; 
+                border-top-style: solid;
+                font-size: 10.8px;
+                font-family: Arial, Helectiva, sans-serif;
+                vertical-align: middle;
+                text-align: center;
+            }
+            td.headerRow:first-child {
+                border-left-width:1px; 
+                border-left-color:#E0E3E5; 
+                border-left-style: solid;
+            }
+            .dataCell{
+                border-bottom-width:1px; 
+                border-bottom-color:#E0E3E5; 
+                border-bottom-style: solid;
+                border-right-width:1px; 
+                border-right-color:#E0E3E5; 
+                border-right-style: solid;
+                font-size: 12px;
+                font-family: Arial, Helectiva, sans-serif;
+                padding:3px;
+            }
+            td.dataCell:first-child {
+                border-left-width:1px; 
+                border-left-color:#E0E3E5; 
+                border-left-style: solid;
+            }
+            .totalCell{
+                font-size: 12px;
+                font-family: Arial, Helectiva, sans-serif;
+                padding:3px;
+                text-align: center;
+                font-weight: normal;
+            }
+            .noAllocationCell{
+                font-size: 12px;
+                font-family: Arial, Helectiva, sans-serif;
+                padding:3px;
+            }
+        </style>
+    </head>
+    
+    <apex:form >
+        <apex:pagemessages ></apex:pagemessages>
+        <apex:pageblock >
+            <div align="center" draggable="false" style="titleRow" >
+                <apex:commandbutton value="Save" action="{!saveAllocations}" rendered="{!renderForHTML}"/>
+                <apex:commandbutton value="Cancel" action="{!cancel}" rendered="{!renderForHTML}"/>
+                <apex:outputtext style="font-weight: bold;margin-left: 20%;" value="Week Of " rendered="{!renderForHTML}"/>
+                <apex:inputfield value="{!dateAllocation.Current_Week_Start_Date__c}" rendered="{!renderForHTML}"/>
+                <apex:commandbutton value="GO" action="{!searchByWeek}" rendered="{!renderForHTML}"/>
+                <apex:commandbutton action="{! saveToPdf }" value="Save to PDF"  rendered="{!renderForHTML}">
+                    <apex:param assignTo="{! renderedFileName }" value="AllocationTable.pdf"/>
+                </apex:commandbutton>        
+                <apex:outputtext styleClass="titleRow" value="Allocation Report For Week Of {!dateAllocation.Current_Week_Start_Date__c}" rendered="{!renderForPDF}"/>   
+            </div>
+        </apex:pageblock>
+
+       
+        <apex:pageblock >
+            <apex:repeat value="{!userAllocationsWrpList}" var="wrp" >    
+                <apex:outputtext styleclass="nameRow" style="font-weight: bold;font-size: 150%;" value="{!wrp.resourceName}"/>                
+                <apex:pageblocktable value="{!wrp.resourceAllocation}" var="member" title="Allocation" rendered="{!wrp.resourceAllocation!=null}" >
+                    <apex:column styleclass="dataCell" headerValue="Resource Name" width="11%" >
+                        <apex:outputtext value="{!member.Resource_Name__c}"/>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Project ID" width="5%">
+                        <apex:outputtext value="{!member.Project_ID__c}"/>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Project Name" width="20%">
+                        <apex:outputlink value="/{!member.Project__c}"><apex:outputtext value="{!member.Project_Name__c}"/></apex:outputlink>
+                    </apex:column> 
+                    <apex:column styleclass="dataCell"  headerValue="Project Stage" width="9%">
+                        <apex:outputtext value="{!member.Project_Stage__c}"/>
+                    </apex:column>  
+                    <apex:column styleclass="dataCell"  headerValue="% Completed" width="5%" style="text-align:center;">
+                        <apex:outputtext value="{!member.Completed__c}"/>
+                    </apex:column>    
+                    <apex:column styleclass="dataCell"  headerValue="Start Date" width="9%">
+                        <apex:outputtext value="{0, date, MMM d','  yyyy}" >
+                            <apex:param value="{!member.Project_Start_Date__c}" /> 
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="End Date" width="9%">
+                        <apex:outputtext value="{0, date, MMM d','  yyyy}" >
+                            <apex:param value="{!member.Project_End_Date__c}" /> 
+                        </apex:outputText>
+                    </apex:column>              
+                    <apex:column styleclass="dataCell"  headerValue="Project Owner" width="9%" >
+                        <apex:inputfield value="{!member.Project_Owner__c}"/>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Weekly Budgeted Hours" width="4%">
+                        <apex:outputtext style="margin-left: 50%;" value="40"/>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Work Allocation Current Week" width="4%" rendered="{!renderForHTML}">
+                        <apex:inputfield value="{!member.Current_Allocation__c}" html-allocation-current="cur{!member.Resource__c}" onchange="recalculateTotal(this, 'allocation-current');"/>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Work Allocation Next Week" width="4%" rendered="{!renderForHTML}">
+                        <apex:inputfield value="{!member.Re_Allocation__c}" html-allocation-next="next{!member.Resource__c}" onchange="recalculateTotal(this, 'allocation-next')"/>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Current Week" width="4%" rendered="{!renderForPDF}">
+                        <apex:outputtext style="margin-left: 50%;" value="{!member.Current_Allocation__c}"/>
+                        <apex:facet name="footer">
+                            <apex:outputText styleclass="totalCell" value="{!wrp.Totalcurrent}" rendered="{!(wrp.resourceAllocation!=null && renderForPDF=='true')}"/>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column styleclass="dataCell"  headerValue="Next Week" width="4%" rendered="{!renderForPDF}">
+                        <apex:outputtext style="margin-left: 50%;" value="{!member.Re_Allocation__c}"/>
+                        <apex:facet name="footer">
+                            <apex:outputText styleclass="totalCell" value="{!wrp.Totalnext}" rendered="{!(wrp.resourceAllocation!=null && renderForPDF=='true')}"/>
+                        </apex:facet>
+                    </apex:column>
+                </apex:pageblocktable> 
+                                       
+                <apex:outputtext style="margin-left: 78%;" value="{!wrp.Totalcurrent}" rendered="{!wrp.resourceAllocation!=null && renderForHTML=='true'}" html-allocation-currentTotal="cur{!wrp.resourceId}"/>
+                <apex:outputtext style="margin-left: 13%;" value="{!wrp.Totalnext}" rendered="{!wrp.resourceAllocation!=null && renderForHTML=='true'}" html-allocation-nextTotal="next{!wrp.resourceId}"/>
+
+                <apex:outputpanel rendered="{!wrp.resourceAllocation==null}">
+                    <div class="noAllocationCell">
+                        <apex:outputtext value="No Projects Allocated" rendered="{!wrp.resourceAllocation==null}"/>
+                    </div>
+                </apex:outputpanel>
+                <br/>
+            </apex:repeat>    
+        </apex:pageblock>
+    </apex:form>
+    <script>
+        function recalculateTotal(el, allocationType) {
+            //The allocation type should either equal 'allocation-current' or 'allocation-next' and is used
+            //  to point to the custom attribute that is storing the value(ex: html-allocation-current). 
+            //  The Id here is either 'cur' or 'next' plus the SF Id of the contact    
+            var attributeId = el.getAttribute(allocationType);
+            
+            //We now find all siblings with a matching attribute set to a matching Id and total all the values
+            var siblingList = document.querySelectorAll('['+allocationType+'="'+attributeId+'"]');
+            var total = 0;
+            for(var i = siblingList.length - 1; i >= 0; i--) {
+                var siblingValue = siblingList[i].value;
+                
+                //Safety check to ensure it is a number
+                if(!isNaN(siblingValue))
+                {
+                    var valueToNumber = Number(siblingValue);
+                    total += parseInt(valueToNumber);
+                }
+                else
+                {
+                  console.log("one of the values entered was not a number: "+siblingValue);
+                }
+            }
+            
+            //After we have added up the total, we get the field that holds the total, which has an attribute
+            //  by a similar name as above, plus 'Total' on the end, and matches the above id value, and update
+            //  the total for display
+            var elDisplayTotal = document.querySelector('['+allocationType+'Total="'+attributeId+'"]');
+            elDisplayTotal.innerHTML=total;
+        }
+    </script>-->
+</apex:page>

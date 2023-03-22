@@ -1,0 +1,49 @@
+<apex:page > <!---
+ standardcontroller="DMO_Group__c" extensions="DMOLaunchExtension"> 
+    <apex:pagemessages />
+    <apex:form >
+        <apex:pageblock title="Choose Group or Allocation"  rendered="{!renderMain}">
+           <div>    
+                <apex:inputCheckbox title="Groups" id="group" value="{!dmoGroup}"  /> 
+                <apex:outputtext value="Group" style="font-weight:200;font-size: 150%;" />
+                <br/>               
+                <apex:inputCheckbox title="Allocation" id="allocation" value="{!allocation}"/>
+                <apex:outputtext value="Allocation" style="font-weight:200;font-size: 150%;" />
+                <br/>
+                <apex:commandButton value="Next" action="{!nextStep}"/>            
+          </div>  
+        </apex:pageblock>
+        
+        
+         <apex:pageblock title="Groups" rendered="{!renderGroup}">
+            
+            
+            <apex:pageblock title="Add New Group">
+                <apex:pageblocksection >
+                    <apex:inputtext value="{!groupName}" label="Group Name"/>
+                    <apex:commandbutton action="{!saveGroup}" value="Save"/>
+                </apex:pageblocksection>
+            </apex:pageblock>
+            
+            <apex:pageblock title="Modify Group Members">
+                <apex:pageblocksection >                    
+                    <apex:inputtext value="{!searchString}" label="Group Name"/>              
+                    <apex:commandbutton value="Search" action="{!search}"/>                
+                </apex:pageblocksection>
+            </apex:pageblock>
+            
+            <apex:pageblock title="List of Groups">
+                <apex:pageblocktable value="{!groupList}" var="grp" title="Groups">
+                    <apex:column headerValue="Group Number"> 
+                        <apex:outputLink value="/apex/DMOViewMembers?groupid={!grp.id}" id="theLink">{!grp.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column headerValue="Group Name"> 
+                        <apex:outputfield value="{!grp.Group_Name__c}"/> 
+                    </apex:column>
+                    
+                </apex:pageblocktable>
+            </apex:pageblock> 
+        </apex:pageblock>
+    </apex:form> 
+   --->
+</apex:page>

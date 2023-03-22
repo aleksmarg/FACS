@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B2E82A3F-4236-49DE-BB80-A4895D4F3B95</title>
+    <defs>
+        <filter x="-6.0%" y="-40.6%" width="112.0%" height="181.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.364705882   0 0 0 0 0.733333333  0 0 0 0.0919744318 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Event_page-8-hover-Version-B" transform="translate(-229.000000, -764.000000)" fill="#FFFFFF">
+            <g id="Button-/-With-Icon-/-Left-Copy-11" filter="url(#filter-1)" transform="translate(74.000000, 764.000000)">
+                <g id="Icons-/-16-/-Delete" transform="translate(164.000000, 9.000000)">
+                    <rect id="transparent-BG" fill-opacity="0.01" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M11.4453603,13.4104843 C11.4235334,13.6916653 11.206549,13.9163534 10.9497626,13.9163534 L4.99873897,13.9163534 C4.74066869,13.9163534 4.52368422,13.6916653 4.50442525,13.4104843 L3.70325184,4.39471554 L12.2478176,4.39471554 L11.4453603,13.4104843 Z M4.91785127,2.08620626 L11.0447736,2.08620626 L11.3991387,3.27384312 L4.56220218,3.27384312 L4.91785127,2.08620626 Z M13.8976699,3.77200864 C13.8668555,3.50238297 13.670414,3.30979321 13.4521456,3.30979321 L12.7241563,3.30979321 L12.4545306,3.30979321 L11.8716256,1.35564909 C11.808713,1.14251642 11.6456536,1 11.4633353,1 L4.4864502,1 C4.3041319,1 4.14107256,1.14251642 4.07687598,1.35564909 L3.49397096,3.30979321 L3.22562923,3.30979321 L2.4360112,3.30979321 C2.17408913,3.30979321 1.96609218,3.59610999 2.00461014,3.93250011 C2.0354245,4.20212578 2.23058212,4.39471554 2.44885052,4.39471554 L2.82632645,4.39471554 L3.63520346,13.509347 C3.66601782,13.9253409 3.82650929,14.3092365 4.08457957,14.5801461 C4.33879805,14.8523396 4.66363278,15.0012757 4.99873897,15 L10.9497626,15 C11.2861527,15.0012757 11.6109875,14.8523396 11.865206,14.5801461 C12.1219923,14.3092365 12.2824838,13.9253409 12.3145821,13.509347 L13.1234591,4.39471554 L13.4649849,4.39471554 C13.7281909,4.39471554 13.9361879,4.10711483 13.8976699,3.77200864 L13.8976699,3.77200864 Z" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

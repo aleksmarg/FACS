@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BF2FB7FE-B455-4BF7-81F9-98884BF979E7</title>
+    <defs>
+        <filter x="-6.0%" y="-40.6%" width="112.0%" height="181.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.364705882   0 0 0 0 0.733333333  0 0 0 0.0919744318 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M6.57291667,10.7604167 C7.33680933,11.506948 8.25694,11.880208 9.33333333,11.880208 C10.4097267,11.880208 11.32552,11.502608 12.0807267,10.747396 C12.83594,9.992184 13.21354,9.076394 13.21354,8 C13.21354,6.923606 12.83594,6.00781333 12.0807267,5.25260667 C11.32552,4.49739333 10.4097267,4.11979333 9.33333333,4.11979333 C8.25694,4.11979333 7.34114933,4.49739333 6.58593733,5.25260667 C5.83072533,6.00781333 5.45312533,6.923606 5.45312533,8 C5.45312533,9.076394 5.82638533,9.996524 6.57291667,10.7604167 Z M5.79166667,4.45833333 C6.763894,3.48610667 7.94444,3 9.33333333,3 C10.7222267,3 11.9027733,3.48610667 12.875,4.45833333 C13.8472267,5.43056 14.3333333,6.611104 14.3333333,8 C14.3333333,9.388896 13.8472267,10.5694393 12.875,11.5416667 C11.9027733,12.5138937 10.7222267,13 9.33333333,13 C7.94444,13 6.763894,12.5138937 5.79166667,11.5416667 C4.81943933,10.5694393 4.33333333,9.388896 4.33333333,8 C4.33333333,6.611104 4.81943933,5.43056 5.79166667,4.45833333 Z M2.71875,5.91666667 C2.31944267,6.54167 2.119792,7.23610733 2.119792,8 C2.119792,8.76389267 2.31944267,9.46267067 2.71875,10.096354 C3.11805733,10.730038 3.65624667,11.2031233 4.33333333,11.5156253 L4.33333333,12.7135417 C3.361106,12.3663177 2.56250333,11.7586847 1.9375,10.8906253 C1.31249687,10.0225653 1,9.05903333 1,8 C1,6.94096667 1.31249687,5.97743333 1.9375,5.10937333 C2.56250333,4.24131333 3.361106,3.63368 4.33333333,3.28646 L4.33333333,4.48437333 C3.65624667,4.79687333 3.11805733,5.2743 2.71875,5.91666667 Z M9.88020667,5.78646 L9.88020667,7.45312533 L11.5468733,7.45312533 L11.5468733,8.54687467 L9.88020667,8.54687467 L9.88020667,10.2135413 L8.78646,10.2135413 L8.78646,8.54687467 L7.119792,8.54687467 L7.119792,7.45312533 L8.78646,7.45312533 L8.78646,5.78646 L9.88020667,5.78646 Z" id="path-2"></path>
+    </defs>
+    <g id="selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Event_page-8-hover-Version-B" transform="translate(-253.000000, -764.000000)">
+            <g id="Button-/-With-Icon-/-Left-Copy-11" filter="url(#filter-1)" transform="translate(74.000000, 764.000000)">
+                <g id="Icons-/-16-/-Duplicate" transform="translate(188.000000, 9.000000)">
+                    <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Fill-1" fill="#FFFFFF" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

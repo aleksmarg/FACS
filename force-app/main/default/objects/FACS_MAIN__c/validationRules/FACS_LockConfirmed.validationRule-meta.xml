@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACS_LockConfirmed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL( PRIORVALUE( FACS_STATUS__c) , &apos;Confirmed&apos;)  , OR (
+ISCHANGED(FACS_File_Name__c),ISCHANGED( FACS_EmailBody__c ),
+ISCHANGED( FACS_SUBJECT__c ),ISCHANGED( FACS_Affiliate_File__c ),
+  ISCHANGED( FACS_DistLists__c),ISCHANGED( FACS_ORG_Emails__c) ,
+ ISCHANGED(FACS_Schedule_Long__c),
+ ISCHANGED(FACS_SendGrid_confirmation__c	),
+ ISCHANGED(FACS_Email_type__c	),
+ ISCHANGED(Manual_File_type__c)
+ 
+)
+)</errorConditionFormula>
+    <errorMessage>Confirmed record cannot be changed.</errorMessage>
+</ValidationRule>

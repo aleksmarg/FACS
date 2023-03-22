@@ -1,0 +1,81 @@
+<apex:page >
+<!--<apex:page standardController="DMO_Group_Members__c" extensions="DMOViewMembersExtension">
+
+    <apex:form >
+        <apex:includeScript value="/soap/ajax/27.0/connection.js"/>
+        <apex:pageMessages >
+        
+        </apex:pageMessages>
+        
+         <apex:pageblock rendered="{!groupPage}" >
+            <div align="center" draggable="false" >
+                <apex:commandbutton value="Cancel" action="{!cancelDMOViewMembers}"  /> 
+                <apex:commandbutton value="Allocate Members" action="{!alloacteGroupMembers}"  />  
+            </div>
+        </apex:pageblock>
+        
+        <apex:pageblock title="Modify Group" rendered="{!groupPage}">        
+            <apex:pageblocksection >
+                <apex:inputfield value="{!dmoGroup.Group_Name__c}"/>
+                <apex:commandbutton value="Update Name" action="{!updateGroup}"/>
+            </apex:pageblocksection>
+        
+        </apex:pageblock>
+        
+        <apex:pageblock title="Contacts" rendered="{!groupPage}">     
+            <apex:commandbutton value="Add/Remove Members" action="{!displayContactForSelection}"/>
+            <apex:pageblocktable value="{!dmoGroupMembList}" var="member">
+                <apex:column headerValue="Group Name">
+                    <apex:outputfield value="{!member.DMO_Group__r.Group_Name__c}"/>
+                </apex:column>
+                <apex:column headerValue="Group Member">
+                    <apex:outputfield value="{!member.Group_Member__c}"/>
+                </apex:column>
+            </apex:pageblocktable>
+        </apex:pageblock>
+        
+        
+         <apex:pageblock title="Contacts" rendered="{!contactPage}" id="contactList">   
+             
+                 <apex:commandbutton value="Save" action="{!saveContactToGrpMembers}"/>  
+                 <apex:commandbutton value="Cancel" action="{!cancelAddMembers}"/>
+                 <!-- <apex:inputtext style="margin-left: 75%;" value="{!searchString}" />
+                 <apex:commandbutton value="Search" action="{!search}"/>
+                 
+               
+               <apex:actionregion >
+                <apex:pageblocktable value="{!ContactWrapperList}" var="wrp">
+                <apex:column headerValue="Selected Contact">
+                    <apex:inputcheckbox value="{!wrp.IsSelected}"/>
+                </apex:column>
+                <apex:column headerValue="Contact Name">
+                        <apex:outputfield value="{!wrp.cont.Name}"/>
+                 </apex:column>                            
+                </apex:pageblocktable>
+             </apex:actionregion>  
+             
+            <apex:panelGrid columns="7">
+                <apex:commandButton status="fetchStatus" reRender="contactList" value="|<" action="{!setCon.first}" disabled="{!!setCon.hasPrevious}" title="First Page"/>
+                <apex:commandButton status="fetchStatus" reRender="contactList" value="<" action="{!setCon.previous}" disabled="{!!setCon.hasPrevious}" title="Previous Page"/>
+                <apex:commandButton status="fetchStatus" reRender="contactList" value=">" action="{!setCon.next}" disabled="{!!setCon.hasNext}" title="Next Page"/>
+                <apex:commandButton status="fetchStatus" reRender="contactList" value=">|" action="{!setCon.last}" disabled="{!!setCon.hasNext}" title="Last Page"/>
+                 <apex:outputText styleClass="positiontext" value="{!(setCon.pageNumber * size)+1-size}-{!IF((setCon.pageNumber * size)>noOfRecords, noOfRecords,(setCon.pageNumber * size))} of {!noOfRecords}"/>
+                <apex:commandButton status="fetchStatus" reRender="contactList" value="Refresh" action="{!refresh}" title="Refresh Page"/>
+                <apex:outputPanel style="color:#4AA02C;font-weight:bold">
+                    <apex:actionStatus id="fetchStatus" startText="Fetching..." stopText=""/>
+                </apex:outputPanel>
+            </apex:panelGrid>
+           
+        </apex:pageblock>     
+        
+        <apex:pageblock rendered="{!contactPage}" id="GroupMemberList"> 
+            <apex:pageblockTable value="{!dmoGroupMembList}" var="resource">
+               <b><apex:column headerValue="Contact" style="width:20%" ><apex:inputfield value="{!resource.DMO_Group_Member1__c}"/></apex:column></b>           
+            </apex:pageblockTable> 
+        </apex:pageblock> 
+       
+        
+    </apex:form>  
+-->
+
+</apex:page>

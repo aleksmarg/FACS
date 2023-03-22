@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>7E179E39-559E-409B-AF99-DE648F6DE0BB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M10.5,1 C10.7761424,1 11,1.22385763 11,1.5 L11,2 L13.1,2 C13.562,2 13.9456,2.392 13.9946933,2.89143704 L14,3 L14,13 C14,13.5133333 13.6472,13.9395556 13.1977067,13.9941037 L13.1,14 L2.9,14 C2.438,14 2.0544,13.608 2.00530667,13.108563 L2,13 L2,3 C2,2.48666667 2.3528,2.06044444 2.80229333,2.0058963 L2.9,2 L5,2 L5,1.5 C5,1.22385763 5.22385763,1 5.5,1 C5.77614237,1 6,1.22385763 6,1.5 L6,2 L10,2 L10,1.5 C10,1.22385763 10.2238576,1 10.5,1 Z M13,6 L3,6 L3.00101273,12.9953153 L3.04166667,13 L12.9583333,13 L12.9958333,12.9940035 C12.9986883,12.9940035 13,12.9955026 13,13 L13,6 Z M6,10 L6,12 L4,12 L4,10 L6,10 Z M9,10 L9,12 L7,12 L7,10 L9,10 Z M12,10 L12,12 L10,12 L10,10 L12,10 Z M6,7 L6,9 L4,9 L4,7 L6,7 Z M9,7 L9,9 L7,9 L7,7 L9,7 Z M12,7 L12,9 L10,9 L10,7 L12,7 Z M5,3 L3.04166667,3 L3.00416667,3.00599647 C3.00131173,3.00599647 3,3.00449735 3,3 L3,5 L13,5 L13,3 L12.9958333,3.00599647 L12.9583333,3 L11,3 L11,3.5 C11,3.77614237 10.7761424,4 10.5,4 C10.2238576,4 10,3.77614237 10,3.5 L10,3 L6,3 L6,3.5 C6,3.77614237 5.77614237,4 5.5,4 C5.22385763,4 5,3.77614237 5,3.5 L5,3 Z" id="path-1"></path>
+    </defs>
+    <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.158837, 0.000000)">
+            <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="calendar-2" fill="#706E6B" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <rect id="🎨-Color" fill="#706E6B" mask="url(#mask-2)" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+        </g>
+    </g>
+</svg>

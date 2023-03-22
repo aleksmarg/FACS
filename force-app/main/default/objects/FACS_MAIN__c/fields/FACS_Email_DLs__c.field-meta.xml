@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACS_Email_DLs__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Email distribution lists</description>
+    <externalId>false</externalId>
+    <label>Email DLs</label>
+    <referenceTo>FACS_DL_Lists__c</referenceTo>
+    <relationshipLabel>MAIN</relationshipLabel>
+    <relationshipName>MAIN</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>6A518307-42A8-4D13-BBBE-15F76305BBF4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Events-Open" transform="translate(-785.000000, -412.000000)">
+            <g id="dashboard-/-event-/-calendar-copy-12" transform="translate(16.000000, 178.000000)">
+                <g id="dashboard-/-event-/-calendar-copy-7" transform="translate(27.000000, 22.000000)">
+                    <g id="dashboard-/-event/calendar">
+                        <g id="Clip-2">
+                            <g id="List-Table-/-Row-Copy-8" transform="translate(18.000000, 202.000000)">
+                                <g id="Group" transform="translate(198.000000, 0.000000)">
+                                    <g id="List-Table-/-Cell-/-Default" transform="translate(517.000000, 0.000000)">
+                                        <g id="Icons-/-16-/-Checkbox-/-Default" transform="translate(13.000000, 12.000000)">
+                                            <rect id="transparent-BG" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                                            <g id="Group-2">
+                                                <g id="Oval">
+                                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                                </g>
+                                                <circle id="Oval" stroke="#4760FD" fill="#4760FD" cx="8" cy="8" r="6.5"></circle>
+                                                <path d="M8,4 C7.70931579,4 7.47368421,4.23564204 7.47368421,4.52631565 L7.47368421,7.47369382 L4.52631579,7.47369382 C4.23564211,7.47369382 4,7.70932534 4,8.00001158 C4,8.29069571 4.23564211,8.52632723 4.52631579,8.52632723 L7.47368421,8.52632723 L7.47368421,11.4736843 C7.47368421,11.764358 7.70931579,12 8,12 C8.29068421,12 8.52631579,11.764358 8.52631579,11.4736843 L8.52631579,8.52632723 L11.4736842,8.52632723 C11.7643579,8.52632723 12,8.29069571 12,8.00001158 C12,7.70932534 11.7643579,7.47369382 11.4736842,7.47369382 L8.52631579,7.47369382 L8.52631579,4.52631565 C8.52631579,4.23564204 8.29068421,4 8,4 L8,4 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

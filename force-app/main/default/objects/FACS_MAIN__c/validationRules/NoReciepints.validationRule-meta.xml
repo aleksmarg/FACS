@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoReciepints</fullName>
+    <active>true</active>
+    <description>No DLs and no emails when status Pending and status changed</description>
+    <errorConditionFormula>AND(AND(ISPICKVAL(PRIORVALUE(FACS_STATUS__c), &quot;Pending&quot;)),  ISPICKVAL( FACS_STATUS__c , &quot;Sent&quot;) ,ISBLANK( FACS_ORG_Emails__c ), ISBLANK( FACS_DistLists__c )  )</errorConditionFormula>
+    <errorMessage>You cannot send email without reciepients.Sent status requered email list</errorMessage>
+</ValidationRule>

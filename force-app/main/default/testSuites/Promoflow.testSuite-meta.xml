@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>PROFLOW_AsyncPushToDomainTest</testClassName>
+    <testClassName>PROFLOW_AttachmentsTest</testClassName>
+    <testClassName>PROFLOW_BoxFolderModelTest</testClassName>
+    <testClassName>PROFLOW_BoxHttpMock</testClassName>
+    <testClassName>PROFLOW_CampaignsTest</testClassName>
+    <testClassName>PROFLOW_DeportesIngestTagsFromCSVTest</testClassName>
+    <testClassName>PROFLOW_ENTPromocodeBuilderTest</testClassName>
+    <testClassName>PROFLOW_MPPromocodeBuilderTest</testClassName>
+    <testClassName>PROFLOW_MusicCueControllerTest</testClassName>
+</ApexTestSuite>

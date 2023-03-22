@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>ECC140E6-B939-4F31-862B-CA6249FD1A82</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle cx="8" cy="8" r="8"></circle>
+        <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.712947237   0 0 0 0 0.712947237   0 0 0 0 0.712947237  0 0 0 0.253414554 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="new-svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+        <g>
+            <g>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <!-- <circle fill-opacity="0.8" fill="#1500CC" cx="8" cy="8" r="7"></circle> -->
+            <g transform="translate(4.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="0.3">
+                <path d="M4,0 C3.70931579,0 3.47368421,0.235642043 3.47368421,0.526315651 L3.47368421,3.47369382 L0.526315789,3.47369382 C0.235642105,3.47369382 0,3.70932534 0,4.00001158 C0,4.29069571 0.235642105,4.52632723 0.526315789,4.52632723 L3.47368421,4.52632723 L3.47368421,7.47368435 C3.47368421,7.76435796 3.70931579,8 4,8 C4.29068421,8 4.52631579,7.76435796 4.52631579,7.47368435 L4.52631579,4.52632723 L7.47368421,4.52632723 C7.76435789,4.52632723 8,4.29069571 8,4.00001158 C8,3.70932534 7.76435789,3.47369382 7.47368421,3.47369382 L4.52631579,3.47369382 L4.52631579,0.526315651 C4.52631579,0.235642043 4.29068421,0 4,0 L4,0 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
