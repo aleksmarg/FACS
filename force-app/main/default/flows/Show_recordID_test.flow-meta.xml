@@ -120,7 +120,7 @@
         <inputAssignments>
             <field>FACS_Email_type__c</field>
             <value>
-                <stringValue>FBC Log</stringValue>
+                <stringValue>FBC</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -174,7 +174,7 @@
         <inputAssignments>
             <field>FACS_Email_type__c</field>
             <value>
-                <stringValue> {!recordId.Manual_File_type__c}</stringValue>
+                <elementReference>GET_FACS.FACS_Email_type__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -192,7 +192,7 @@
         <inputAssignments>
             <field>Manual_File_type__c</field>
             <value>
-                <elementReference>recordId.Manual_File_type__c</elementReference>
+                <elementReference>GET_FACS.Manual_File_type__c</elementReference>
             </value>
         </inputAssignments>
         <object>FACS_MAIN__c</object>
@@ -246,7 +246,7 @@
         <inputAssignments>
             <field>Manual_File_type__c</field>
             <value>
-                <elementReference>recordId.Manual_File_type__c</elementReference>
+                <elementReference>GET_FACS.Manual_File_type__c</elementReference>
             </value>
         </inputAssignments>
         <object>FACS_MAIN__c</object>
@@ -446,6 +446,16 @@
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithoutHeader</regionContainerType>
         </fields>
+        <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <isRequired>false</isRequired>
+            <objectFieldReference>GET_FACS.Manual_File_type__c</objectFieldReference>
+        </fields>
+        <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <isRequired>false</isRequired>
+            <objectFieldReference>GET_FACS.FACS_Email_type__c</objectFieldReference>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
@@ -456,7 +466,7 @@
             <targetReference>GET_FACS</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>MainRecord</name>
         <dataType>SObject</dataType>

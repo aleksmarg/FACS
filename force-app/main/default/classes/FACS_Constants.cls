@@ -6,7 +6,7 @@
  * @last modified by  : A.Margovskiy 
  * Modifications Log
  * Ver   Date         Author        Modification
- * 1.0 03-14-2-23   A.Margovskiy  Initial Version
+ * 1.0 03-14-2-23   A.Margovskiy  Initial Versio
 **/
 public with sharing class FACS_Constants { 
 
